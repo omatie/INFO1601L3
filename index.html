@@ -6,6 +6,32 @@
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
         <style>
+          div{
+                        background-color: lightgrey;
+                        width: 300px;
+                        border-bottom: solid;
+                        padding: 50px;
+                        margin:20px 10px 40px 20px;
+                }
+
+                div{
+  width: 400px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius:4px;
+  padding: 5px;
+}
+
+div> h2{
+  text-decoration: none;
+}
        section{
 		height:80vh;
 	   }
@@ -17,14 +43,23 @@
 	   p{
 		text-align: justify;
 		margin-left: auto;
+      margin-right:auto;
+      width:50vw;
 	   }
 	   #p1{
 		text-align:left;
+      font-style: italic;
+      font-weight:bolder;
 	   }
+
+      #border{
+         border: 5px solid black;
+      }
+
 	   p span{
 		font-weight: bold;
 	   }
-	   ection{
+	   section{
                  border-bottom: 5px solid black;
            }
 
@@ -51,11 +86,24 @@
              background: rgb(131,58,180);
              background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,211,253,1) 50%, rgba(252,176,69,1) 100%);
            }
-
+           li:hover {
+           display: none
+        }
+        p:hover{
+        outline: 2px double red;
+}
         </style>
   </head>
   <body>
-     <section>
+   <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+   </ol>
+
+   <br>
+     <section id="border">
 		<section id="section1">
 			section 1
 		
@@ -65,14 +113,15 @@
 <h2>
 	My Poem
 </h2>
-<p id="p1" ><span>Why</span>Why 1</p>
-<p>Why 2</p>
-<p>Why 3</p>
-<p>WHy 4</p>
+<p id="p1" ><span>Why</span> won't students come to labs? This is something I always ponder. After unprepared students write exams, They watch their marks in wonder.</p>
+<p><span>Why</span> won't students come to labs? What is more important than class? How can you be a student if you don't even try to pass?</p>
+<p><span>Why</span> won't students come to labs? It happens all the time. If you came to labs, you'd know what to do. But you would rather duck and go lime.</p>
+<p><span>Why</span> won't students come to labs? I see them all now stressing. If you only learned this basic programming, You would surely now be zessing.</p>
 	 </section>
 
-	 <section id="section2">
+	 <section id="section2" id="border">
 		<h1>Section 2</h1>
+      <div>My second div</div>
    </section>
     <script src="script.js"></script>
   </body>
