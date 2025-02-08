@@ -1,17 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<style>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+        <style>
+       section{
+		height:80vh;
+	   }
 
-</style>
-<body>
+	   h2{
+		text-align:center;
+		text-decoration: overline underline wavy red;
+	   }
+	   p{
+		text-align: justify;
+		margin-left: auto;
+	   }
+	   #p1{
+		text-align:left;
+	   }
+	   p span{
+		font-weight: bold;
+	   }
+	   ection{
+                 border-bottom: 5px solid black;
+           }
 
+           #section1{
+                 height: 80vh;
+           }
 
+           #section1::before{
+             background-image: url("https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+             background-size: stretch;
+             background-position: center;
+             content: "";
+             position: absolute;
+             width:100%;
+             height: 100%;
+             z-index: -2;
+             opacity: 0.3;
+           }
 
-	
-</body>
+          #section2{
+             padding: 2em;
+             color: white;
+             height: 60vh;
+             background: rgb(131,58,180);
+             background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,211,253,1) 50%, rgba(252,176,69,1) 100%);
+           }
+
+        </style>
+  </head>
+  <body>
+     <section>
+		<section id="section1">
+			section 1
+		
+<h1>
+	Sampple Poem
+</h1>
+<h2>
+	My Poem
+</h2>
+<p id="p1" ><span>Why</span>Why 1</p>
+<p>Why 2</p>
+<p>Why 3</p>
+<p>WHy 4</p>
+	 </section>
+
+	 <section id="section2">
+		<h1>Section 2</h1>
+   </section>
+    <script src="script.js"></script>
+  </body>
 </html>
